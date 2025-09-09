@@ -1,0 +1,6 @@
+def is_armstrong(num):
+    power = len(str(num))
+    total = sum(int(digit) ** power for digit in str(num))
+    return total == num
+
+print(is_armstrong(153))  # True
